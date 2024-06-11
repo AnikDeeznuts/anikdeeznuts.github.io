@@ -57,6 +57,13 @@
       "authorLink": "https://www.krinkels.net/",
       "type": "Game"
     },
+     {
+      "location": "swfs/mad.swf",
+      "title": "MCPN Mod : Even More Madness",
+      "author": "bobby on discord MCPN modding server",
+      "authorLink": "chrome://dino",
+      "type": "Game"
+    },
     {
       "location": "swfs/flyguy.swf",
       "title": "FlyGuy",
