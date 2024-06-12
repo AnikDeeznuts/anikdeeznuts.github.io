@@ -65,13 +65,6 @@
       "type": "Game"
     },
     {
-      "location": "Modv7.swf",
-      "title": "MCPN Mod : party mod",
-      "author": "here is the real link",
-      "authorLink": "https://www.kongregate.com/games/asriel343/madnes-project-nexus-party-mod-iii",
-      "type": "Game"
-    },
-    {
       "location": "swfs/flyguy.swf",
       "title": "FlyGuy",
       "author": "Trevor van Meter",
@@ -83,6 +76,13 @@
       "title": "Marvin Spectrum",
       "author": "Bryan Singh",
       "authorLink": "https://www.hotbryan.com",
+      "type": "Game"
+    },
+     {
+      "location": "Modv7.swf",
+      "title": "MCPN Mod : aprty",
+      "author": "bobby on discord MCPN modding server",
+      "authorLink": "chrome://dino",
       "type": "Game"
     },
     {
