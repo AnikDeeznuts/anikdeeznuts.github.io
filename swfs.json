@@ -65,6 +65,20 @@
       "type": "Game"
     },
     {
+      "location": "swfs/mod.swf",
+      "title": "MCPN Mod : party mode test",
+      "author": "bobby on discord MCPN modding server",
+      "authorLink": "chrome://dino",
+      "type": "Game"
+    },
+    {
+      "location": "swfs/ModV7.swf",
+      "title": "MCPN Mod : party mod test",
+      "author": "bobby on discord MCPN modding server",
+      "authorLink": "chrome://dino",
+      "type": "Game"
+    },
+    {
       "location": "swfs/flyguy.swf",
       "title": "FlyGuy",
       "author": "Trevor van Meter",
