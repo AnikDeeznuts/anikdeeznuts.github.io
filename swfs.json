@@ -85,9 +85,16 @@
       "authorLink": "chrome://dino",
       "type": "Game"
     },
+      {
+      "location": "ModV4.swf",
+      "title": "MCPN Mod : party mod 2",
+      "author": "search on chrome",
+      "authorLink": "chrome://dino",
+      "type": "Game"
+    },
      {
       "location": "pvz.swf",
-      "title": "on random website (chinse)",
+      "title": "pvz on random website (chinse)",
       "author": "idk",
       "authorLink": "idk",
       "type": "Game"
