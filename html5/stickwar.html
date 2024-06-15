@@ -1,0 +1,174 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://flashstorage.games/public/css/modern/player.css?p=2">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimal-ui, shrink-to-fit=no viewport-fit=cover, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="csrf-token" content="mPxnqlQxDRYu70T2ihZxfhXYDyh2Kd5HaWO10inB" />
+<link rel="stylesheet" href="https://flashstorage.games/public/css/all.min.css">
+<title>Stick War</title>
+<script language="javascript">
+var settings = {
+		baseUrl: "https://flashstorage.games/",
+		publicUrl: "https://flashstorage.games/public/",
+		testMode:  false 	};
+var GAME = {
+		id: 17479,
+		name: "Stick War",
+		slug: 'stick-war',
+		src: 'https://flashstorage.games/public/storage/games/multi-file-games/stick-war-files/stickwar.swf',
+		width: 600,
+		height: 400,
+		extension: 'SWF',
+		flashversion: "",
+		paramOptionsCode: '',
+		embedOptionsCode: '',
+		image: 'https://flashga.me/public/storage/games/June2022/ty3J1TnlVwxu3CNGA2FG.jpg',
+		playable: 1,
+		resizable: 1,
+		updatedAt: '',
+		avm: '1',
+		emulator: 'ruffle',
+		reqEmulator: null,
+		fileType: 2,
+		orientation: 'landscape',
+		moreQuery: '{&quot;id&quot;:17479,&quot;name&quot;:&quot;Stick War&quot;,&quot;slug&quot;:&quot;stick-war&quot;,&quot;file&quot;:&quot;[]&quot;,&quot;alt_file&quot;:&quot;https:\/\/flashstorage.games\/public\/storage\/games\/multi-file-games\/stick-war-files\/stickwar.swf&quot;,&quot;alt_game&quot;:null,&quot;width&quot;:600,&quot;height&quot;:400,&quot;origin&quot;:null,&quot;extension&quot;:&quot;SWF&quot;,&quot;flashversion&quot;:null,&quot;image&quot;:&quot;games\/June2022\/ty3J1TnlVwxu3CNGA2FG.jpg&quot;,&quot;playable&quot;:1,&quot;resizable&quot;:1,&quot;updatedAt&quot;:null,&quot;avm&quot;:1,&quot;flashvars&quot;:null,&quot;emulator&quot;:&quot;ruffle&quot;,&quot;orientation&quot;:&quot;landscape&quot;,&quot;embed_options&quot;:&quot;{\&quot;wmode\&quot;:\&quot;opaque\&quot;, \&quot;allowNetworking\&quot;: \&quot;internal\&quot;, \&quot;allowScriptAccess\&quot;: \&quot;No\&quot;}&quot;,&quot;name_mvkb&quot;:&quot;{\r\n    \&quot;Space\&quot;: {\&quot;title\&quot;: \&quot;Interact\&quot;},\r\n    \&quot;rightRound\&quot;: {\r\n        \&quot;Space\&quot;: [\&quot;ArrowLeft\&quot;, \&quot;ArrowRight\&quot;]\r\n    }\r\n}&quot;,&quot;style_mvkb&quot;:null,&quot;left_mvkb&quot;:&quot;[\&quot;ARROWS\&quot;]&quot;,&quot;right_mvkb&quot;:&quot;[\&quot;32\&quot;,\&quot;37\&quot;,\&quot;39\&quot;]&quot;,&quot;category_slug&quot;:&quot;stickman&quot;,&quot;updated_at&quot;:null,&quot;star_user&quot;:7}'
+	};
+	/* MORE Settings */
+	try{
+		var fileGame = JSON.parse('[]');
+			if(typeof fileGame[0] != 'undefined' && typeof fileGame[0].download_link != 'undefined'){
+				GAME.src = settings.publicUrl + 'storage/' + fileGame[0].download_link;
+				GAME.fileType = 1;
+			}
+	}catch(e){};
+	try{
+		var params = JSON.parse('{"wmode":"opaque", "allowNetworking": "internal", "allowScriptAccess": "No"}');
+			for(var i in params){
+				GAME.paramOptionsCode += '<param name="'+i+'" value="'+ params[i] +'"/>';
+				GAME.embedOptionsCode += ' '+i+'="'+params[i]+'"';
+			}
+			console.log(GAME.embedOptionsCode, GAME.paramOptionsCode);
+	}catch(e){};
+var request = new URLSearchParams(window.location.search);
+	GAME.reqEmulator = request.get('emulator');
+	if (!GAME.reqEmulator) {
+		GAME.reqEmulator = null;
+	};
+var langs = {
+		play_now: "PLAY NOW",
+		new_window: "New Window",
+		loading: "Loading...",
+	};
+</script>
+<script src="https://flashstorage.games/public/js/flash_detect.js"></script>
+<script src="https://flashstorage.games/public/js/jquery.min.js?f=2"></script>
+</head>
+<body>
+<a class="mobile-logo-btn" href="https://flashstorage.games/">Back</a>
+<div class="mobile-overlay-player">
+<div class="mobile-overlay-content">
+<img width="106" height="106" src="https://flashga.me/public/storage/games/June2022/ty3J1TnlVwxu3CNGA2FG.jpg" />
+<button class="mobile-overlay-playnow">PLAY NOW</button></div>
+</div>
+<div class="player-box  landscape-player " style="height:calc(100vh - 40px);overflow:hidden">
+
+<iframe src="https://flashstorage.games/embed/stick-war?emulator=ruffle&game=%7B%22id%22%3A17479%2C%22name%22%3A%22Stick+War%22%2C%22slug%22%3A%22stick-war%22%2C%22file%22%3A%22%5B%5D%22%2C%22alt_file%22%3A%22https%3A%5C%2F%5C%2Fflashstorage.games%5C%2Fpublic%5C%2Fstorage%5C%2Fgames%5C%2Fmulti-file-games%5C%2Fstick-war-files%5C%2Fstickwar.swf%22%2C%22alt_game%22%3Anull%2C%22width%22%3A600%2C%22height%22%3A400%2C%22origin%22%3Anull%2C%22extension%22%3A%22SWF%22%2C%22flashversion%22%3Anull%2C%22image%22%3A%22games%5C%2FJune2022%5C%2Fty3J1TnlVwxu3CNGA2FG.jpg%22%2C%22playable%22%3A1%2C%22resizable%22%3A1%2C%22updatedAt%22%3Anull%2C%22avm%22%3A1%2C%22flashvars%22%3Anull%2C%22emulator%22%3A%22ruffle%22%2C%22orientation%22%3A%22landscape%22%2C%22embed_options%22%3A%22%7B%5C%22wmode%5C%22%3A%5C%22opaque%5C%22%2C+%5C%22allowNetworking%5C%22%3A+%5C%22internal%5C%22%2C+%5C%22allowScriptAccess%5C%22%3A+%5C%22No%5C%22%7D%22%2C%22name_mvkb%22%3A%22%7B%5Cr%5Cn++++%5C%22Space%5C%22%3A+%7B%5C%22title%5C%22%3A+%5C%22Interact%5C%22%7D%2C%5Cr%5Cn++++%5C%22rightRound%5C%22%3A+%7B%5Cr%5Cn++++++++%5C%22Space%5C%22%3A+%5B%5C%22ArrowLeft%5C%22%2C+%5C%22ArrowRight%5C%22%5D%5Cr%5Cn++++%7D%5Cr%5Cn%7D%22%2C%22style_mvkb%22%3Anull%2C%22left_mvkb%22%3A%22%5B%5C%22ARROWS%5C%22%5D%22%2C%22right_mvkb%22%3A%22%5B%5C%2232%5C%22%2C%5C%2237%5C%22%2C%5C%2239%5C%22%5D%22%2C%22category_slug%22%3A%22stickman%22%2C%22updated_at%22%3Anull%2C%22star_user%22%3A7%7D" width="100%" height="100%" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</div>
+<div class="more-app-box">
+<div class="more-app-content-box">
+<h3 class="more-app-title">Related Games</h3>
+<button class="more-app-close">&#x2715</button>
+<div class="more-app-body">
+<i id="related_games_loading" style="position:absolute;top:50%;transform:translateY(-50%)">Loading...</i>
+</div>
+<div class="more-app-bottom">
+<div class="share-container">
+<div class="tip">Share</div>
+<div class="share-window">
+<div class="share-bar">
+<div class="trigger" title="Share to Facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://flashstorage.games/stick-war.html" target="_blank"><i class="fab fa-facebook-f"></i></a></div>
+<div class="trigger" title="Share to Twitter"><a href="https://twitter.com/share?text=Stick War&url=https://flashstorage.games/stick-war.html" target="_blank"><i class="fab fa-twitter"></i></a></div>
+<div class="trigger" title="Share to Pinterest"><a href="https://pinterest.com/pin/create/bookmarklet/?url=https://flashstorage.games/stick-war.html" target="_blank"><i class="fab fa-pinterest-p"></i></a></div>
+<div class="trigger" title="Share to Linkedin"><a href="https://www.linkedin.com/shareArticle?mini=true&url=https://flashstorage.games/stick-war.html" target="_blank"><i class="fab fa-linkedin-in"></i></a></div>
+<div class="trigger" title="Share to Whatsapp"><a href="https://api.whatsapp.com/send?text=https://flashstorage.games/stick-war.html" target="_blank"><i class="fab fa-whatsapp"></i></a></div>
+<div class="trigger copy-link" title="Copy link" data-href="https://flashstorage.games/stick-war.html"><a><i class="fas fa-link"></i></a></div>
+</div>
+</div>
+<div class="share">
+<div class="trigger share-btn"><a href="#"><i class="fas fa-plus"></i> Share</a></div>
+</div>
+<div class="like">
+<div class="trigger like-btn"><a href="#"><i class="fas fa-heart"></i><span class="like-counter-text" style="color:red">7</span> Likes</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="toolbar-box">
+<h2 class="fs-logo" style="position:relative;width:80px;height:40px;margin:0"><a style="position: absolute;width:90px;height:40px;left:0;top:8px;background:url(https://flashga.me/public/storage/settings/July2022/VqlxnZBhjiluP1OZ05SD.png) no-repeat center center" href="https://flashstorage.games" target="_top"></a></h2>
+<div class="left-arrow"></div>
+<h1 class="game-name">
+<marquee direction="left" behavior="alternate" scrollamount="1" style="width:100%;height:100%;display:block">Stick War</marquee>
+</h1>
+<div class="right-toolbar-box">
+<div class="share-this-game-box">
+<div class="share-container" style="background: #f14444">
+<div class="tip tip-signal" style="background: #f14444">Share</div>
+<div class="share-window">
+<div class="share-bar">
+<div class="trigger" title="Share to Facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://flashstorage.games/stick-war.html" target="_blank"><i class="fab fa-facebook-f"></i></a></div>
+<div class="trigger" title="Share to Twitter"><a href="https://twitter.com/share?text=Stick War&url=https://flashstorage.games/stick-war.html" target="_blank"><i class="fab fa-twitter"></i></a></div>
+<div class="trigger" title="Share to Pinterest"><a href="https://pinterest.com/pin/create/bookmarklet/?url=https://flashstorage.games/stick-war.html" target="_blank"><i class="fab fa-pinterest-p"></i></a></div>
+<div class="trigger" title="Share to Linkedin"><a href="https://www.linkedin.com/shareArticle?mini=true&url=https://flashstorage.games/stick-war.html" target="_blank"><i class="fab fa-linkedin-in"></i></a></div>
+<div class="trigger" title="Share to Whatsapp"><a href="https://api.whatsapp.com/send?text=https://flashstorage.games/stick-war.html" target="_blank"><i class="fab fa-whatsapp"></i></a></div>
+<div class="trigger copy-link" title="Copy link" data-href="https://flashstorage.games/stick-war.html"><a><i class="fas fa-link"></i></a></div>
+</div>
+</div>
+<div class="share">
+<div class="trigger share-btn"><a href="#"><i class="fas fa-plus"></i> Share</a></div>
+</div>
+<div class="like">
+<div class="trigger like-btn">
+<a href="#">
+<i class="fas fa-heart"></i>
+<span class="like-counter-text">7</span> Likes
+</a></div>
+</div>
+</div>
+</div>
+<div class="emulator-box">
+<div class="emulator-label">Emulators</div>
+<div class="emulator-select" title="Select a Emulator">
+<div class="emulator-current">
+<div class="two-arrow">
+<b class="arrow-up"></b>
+<b class="arrow-down"></b>
+</div>
+<span id="emulator-current-label"> Ruffle (Default)</span></div>
+<div class="emulator-select-sub">
+<div class="emulator-select-sub-content">
+<i>Loading...</i>
+</div>
+</div>
+</div>
+</div>
+<div class="toolbar-line"></div>
+<div class="toolbar-more" title="More"><i>&#10070;</i>
+</div>
+<div class="toolbar-line"></div>
+<div class="reload-button" title="Reload this Game">
+<i class="fas fa-sync-alt"></i>
+</div>
+<div class="toolbar-line"></div>
+<button class="fullscreen" title="Fullscreen Mode">&#10064;</button>
+</div>
+</div>
+<script type="text/javascript">
+	var logoText = "FSG";
+</script>
+<script src="https://flashstorage.games/public/js/modern/player.js?g=3"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"89414244ccd07e61","r":1,"version":"2024.4.1","token":"d9961c923afc4042a74d1f978ef38498"}' crossorigin="anonymous"></script>
+</body>
+</html>
