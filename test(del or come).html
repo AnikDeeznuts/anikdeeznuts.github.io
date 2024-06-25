@@ -1,0 +1,275 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<title>PLAY FLASH GAMES with Ruffle, AwayFL, WAFash and AVM2.JS Emulator at FSG</title>
+<meta name="description" content="PLAYE FLASH GAMES with Ruffle, AwayFL, WAFash and AVM2.JS Emulator at FSG">
+<meta property="og:title" name="title" content="PLAY FLASH GAMES with Ruffle, AwayFL, WAFash and AVM2.JS Emulator at FSG" />
+<meta property="og:description" content="PLAYE FLASH GAMES with Ruffle, AwayFL, WAFash and AVM2.JS Emulator at FSG" />
+<meta property="og:url" itemprop="url" content="https://flashstorage.games/test-emulators" />
+<meta property="og:type" content="website" />
+<meta property="og:image" itemprop="thumbnailUrl" content="https://flashstorage.games/public/images/thumbnail.jpg" />
+<style>
+	#site_wrapper{max-width:1900px;margin:0 auto;background:#FFF}
+</style>
+<meta name="propeller" content="bfc7308c717490fa4269d4bebe78ba38">
+<meta charset="utf-8">
+<meta name="csrf-token" content="kv2xuLD4NN6wSctkpZzIjSREi75ycJctXkBix5Y0">
+<meta name="theme-color" content="#A52724" />
+<meta name="apple-mobile-web-app-status-bar-style" content="#A52724">
+<link rel="alternate" href="https://flashga.me/" hreflang="en" />
+<link rel="alternate" href="https://flashjuegos.com/" hreflang="es" />
+<link rel="alternate" href="https://flashjogos.org/" hreflang="pt" />
+<link rel="alternate" href="https://flashjeux.org/" hreflang="fr" />
+<link rel="alternate" href="https://flashspiele.org/" hreflang="de" />
+<link rel="alternate" href="https://flashages.com/" hreflang="ru" />
+<link rel="alternate" href="https://flashhistory.com/" hreflang="zh" />
+<link rel="alternate" href="https://oldflash.games/" hreflang="kr" />
+<link rel="alternate" href="https://gameflash.org/" hreflang="id" />
+<link rel="alternate" href="https://flashgame.today/" hreflang="cs" />
+<link rel="alternate" href="https://flashgame.world/" hreflang="th" />
+<link rel="alternate" href="https://webflash.games/" hreflang="it" />
+<link rel="alternate" href="https://gryflash.org/" hreflang="pl" />
+<link rel="alternate" href="https://flashspil.com/" hreflang="da" />
+<link rel="alternate" href="https://jogosflash.org/" hreflang="br" />
+<link rel="alternate" href="https://flashjatek.org/" hreflang="hu" />
+<link rel="alternate" href="https://flashoyun.org/" hreflang="tr" />
+<link rel="alternate" href="https://gamevui.co/" hreflang="vi" />
+<link rel="alternate" hreflang="x-default" href="https://flashstorage.games/">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimal-ui, shrink-to-fit=no viewport-fit=cover, minimum-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="icon" href="https://flashga.me/public/storage/settings/July2022/x6wvtJ8J0YYXmqpiUrQo.png" />
+<link rel="apple-touch-icon" href="https://flashstorage.games/public/icons/apple-touch-icon.png">
+<link rel="stylesheet" href="https://flashstorage.games/public/css/w3.css">
+<link rel="stylesheet" href="https://flashstorage.games/public/css/modern/app.css?a=10" />
+<link rel="stylesheet" href="https://flashstorage.games/public/css/gamepad-ui.css?p=1" />
+<link rel="stylesheet" href="https://flashstorage.games/public/css/fsg.css" />
+<script>
+	var FSG_STORE;
+	var settings = {
+		baseUrl:"https://flashstorage.games/",
+		
+		localeBaseUrl: "https://flashstorage.games/",
+		lang: "en",
+		publicUrl:"https://flashstorage.games/public/",
+		logoText: "FSG",
+		siteName: "FlashStorage.Games",
+		displayed: 100,
+				analyticsCode: '',
+				preloadAd: 0,
+		returnAdAfter: 10
+	};
+	
+	/* Language to object */
+	var trans = {
+				home_title: "FLASH GAME - Relive Childhood (Flash Game Emulator)",
+		home_desc: "Play FLASH GAME without installing anything. Best old flash games from Friv, Nitrome, ArmorGames, Y8 and Miniclip.",
+				home: "HOME",
+		for_you: "FOR YOU",
+		all_games: "ALL GAMES",
+		emulator_games: "EMULATORS GAMES",
+		playing: "PLAYING",
+
+		/* Cateogry */
+		category_title: ":name FLASH Games Online for Free at :site",
+		category_desc: ":name FLASH Game Online - These are the best games of the :name category gathered by :site",
+		category_header: ":name Games",
+			/* Order by */
+			orderby_popular: "Popular",
+			orderby_newest: "Newest",
+			orderby_rated: "Rated",
+
+
+		/* Player */
+		play_title: ":name FLASH Game Online for Free at :site",
+		playable_title: "Play :name FLASH Game without Flash Player - :site",
+		play_desc: ":name FLASH Game - Play :name Game with other thousands of games at :site!",
+		ad_in: "Ad in",
+		advertisement: "Advertisement",
+		ad_counter_title: "You can close ad in",
+		play_game : "CONTINUE",
+		play_now: "PLAY NOW",
+		emulator_label : "Emulators",
+		you_are_voting: "You are voting...",
+		thank_for_voted: "Thank You for Voting!",
+		alert_voted: "You have voted for this game!",
+		loading: "Loading",
+		uploading: "Uploading...",
+		use_mouse_or_keyboard: "Use mouse or keyboard to play!",
+		share_to_friends: "Play :name game and share to your friends",
+		feedback: "Feedback",
+		copied: "Copied!",
+		are_you_sure: "Do you reload this game?",
+		changeEmulator: "Change Emulator"
+	};
+</script>
+<script>
+	settings.emulators = [];
+				settings.emulators.push({'slug': 'ruffle', 'name': "Ruffle (Default)"});
+			settings.emulators.push({'slug': 'waflash', 'name': "WAFlash Player"});
+			settings.emulators.push({'slug': 'avm2', 'name': "AVM2 Player"});
+			settings.emulators.push({'slug': 'awayfl', 'name': "AwayFL Player"});
+			settings.emulators.push({'slug': 'flashplayer', 'name': "FSG Flash Player"});
+			settings.emulators.push({'slug': 'supernova', 'name': "Supernova Player"});
+			settings.gameBugs = [];
+	</script>
+</head>
+<body class="bg-default">
+<div id="nav">
+<div class="nav-content">
+<h2 class="fs-logo logo-img" style="position:relative;width:80px;height:50px;margin:1px 10px"><a style="position: absolute;left:0;top:8px;width:80px;height:50px;background:url(https://flashga.me/public/storage/settings/July2022/VqlxnZBhjiluP1OZ05SD.png) no-repeat center center" href="https://flashstorage.games">FSG</a></h2>
+<div class="search-box">
+<form id="search" method="GET">
+<input type="text" size="25" placeholder="Keywords..">
+<input type="submit" value="Search">
+</form>
+<button class="search-close-btn">&#x2715</button>
+</div>
+</div>
+</div> <div id="content" class="test-emulators">
+<h1 class="panel-title">PLAY Your Flash File</h1>
+<div class="w3-col emulator-right-ad">
+<div class="emulator-ad-content"></div>
+</div>
+<div id="playing" class="w3-rest"><b style="font:Bold 20px/30px Arial;padding:10px;position:absolute;left:50%;top:50%;transform:translate(-50%, -50%)">Choose your file...</b></div>
+<hr style="margin:10px 0!important" />
+<form method="POST" enctype="multipart/form-data" id="emulators-file-upload">
+<input type="file" name="file" placeholder="Choose File" id="file" style="display:none">
+<input id="choose-file" type="text" size="30" autocomplete="off" placeholder="Choose your file...">
+<button type="submit" class="btn btn-primary">TRY PLAY</button>
+<i id="last_file_uploaded" style="display:block;font:11px/16px Arial;color:rgba(255,255,255,0.3)"></i>
+</form>
+<div class="choose-emulators">
+<i style="color:rgba(255,255,255,0.5)">With a player:</i>&nbsp;&nbsp;
+<select class="select-emulator" name="select-emulator">
+<option value="ruffle">Ruffle (Default)</option>
+<option value="waflash">WAFlash Player</option>
+<option value="avm2">AVM2 Player</option>
+<option value="awayfl">AwayFL Player</option>
+<option value="flashplayer">FSG Flash Player</option>
+<option value="supernova">Supernova Player</option>
+</select>
+</div>
+<br class="clear-all" />
+</div>
+</div>
+<div id="footer">
+<div class="footer-content">
+<div class="footer-box">
+<h3 class="footer-title">Language</h3>
+<div style="max-height:190px;overflow-y:auto;direction:rtl;width:200px" class="scrollbar-white">
+<div style=" direction: ltr;">
+<span class="footer-list" style="display:block;font:12px/20px Arial;color:rgba(255,255,255,0.5);padding:2px 5px">English</span>
+<a class="footer-list" href="https://flashjuegos.com/" data-click-added="true">Español (Spanish)</a>
+<a class="footer-list" href="https://flashjogos.org/" data-click-added="true">Português (Portuguese)</a>
+<a class="footer-list" href="https://flashjeux.org/" data-click-added="true">Français (French)</a>
+<a class="footer-list" href="https://flashspiele.org/" data-click-added="true">Deutsch (German)</a>
+<a class="footer-list" href="https://flashages.com/" data-click-added="true">Русский (Russian)</a>
+<a class="footer-list" href="https://flashhistory.com/" data-click-added="true">中国人 (Chinese)</a>
+<a class="footer-list" href="https://oldflash.games/" data-click-added="true">한국어 (Korean)</a>
+<a class="footer-list" href="https://gameflash.org/" data-click-added="true">Indonesian (Bahasa)</a>
+<a class="footer-list" href="https://flashgame.today/" data-click-added="true">Čeština (Czech)</a>
+<a class="footer-list" href="https://flashgame.world/" data-click-added="true">ไทย (Thai)</a>
+<a class="footer-list" href="https://webflash.games/" data-click-added="true">Italiano (Italian)</a>
+<a class="footer-list" href="https://gryflash.org/" data-click-added="true">Polski (Polish)</a>
+<a class="footer-list" href="https://flashspil.com/" data-click-added="true">Dansk (Danish)</a>
+<a class="footer-list" href="https://jogosflash.org/" data-click-added="true">Brasil (Brazil)</a>
+<a class="footer-list" href="https://flashjatek.org/" data-click-added="true">Magyar (Hungary)</a>
+<a class="footer-list" href="https://flashoyun.org/" data-click-added="true">Türkçe (Turkish)</a>
+<a class="footer-list" href="https://retroflash.games/" data-click-added="true">International Language</a>
+<a class="footer-list" href="https://gamevui.co/" data-click-added="true">Tiếng Việt (Vietnamess)</a>
+</div>
+</div>
+</div>
+<div class="footer-box">
+<h3 class="footer-title no-history">Shortcut</h3>
+<a class="no-history footer-list" href="https://flashstorage.games/page/about">About Us</a>
+<a class="no-history footer-list" href="https://flashstorage.games/page/cookies">Cookies</a>
+<a class="no-history footer-list" href="/cdn-cgi/l/email-protection#29484d694f45485a415a5d465b484e4c074e48444c5a" target="_blank">Contact Us</a>
+<a class="no-history footer-list" href="https://flashstorage.games/page/terms-and-use">Terms and Use</a>
+</div>
+<div class="footer-box">
+<h3 class="footer-title">Socials</h3>
+<div id="socials_list">
+<a class="footer-list" href="https://discord.gg/tGZeQ2j9Ea" target="_blank">Discord</a>
+<a class="footer-list" href="https://www.youtube.com/@flashstoragegames" target="_blank">Youtube</a>
+<a class="footer-list" href="https://www.tiktok.com/@flashga.me" target="_blank">Tiktok</a>
+<a class="footer-list" href="https://www.facebook.com/flashstoragegames" target="_blank">Facebook</a>
+</div>
+</div>
+<div class="footer-box">
+<h3 class="footer-title">Reference</h3>
+<a class="footer-list" href="https://flashstorage.games/test/emulators" target="_blank">Play Your Flash</a>
+<a class="footer-list" href="https://flashstorage.games/page/fsg-mobile-apps" target="_blank">FSG Mobile Apps</a>
+<a class="footer-list" href="https://flashstorage.games/page/downloads" target="_blank">FSG Browser (Desktop)</a>
+<a class="footer-list" href="https://flashstorage.games/page/download-fsg-adobe-flash-player" target="_blank">FSG AdobeFlashPlayer (Desktop)</a>
+</div>
+<div class="footer-box">
+<h3 class="footer-title">Layout</h3>
+<a class="footer-list" href="https://flashstorage.games?layout=desktop" data-click-added="true" target="_self">Desktop</a>
+<a class="footer-list" href="https://flashstorage.games/?layout=macos" data-click-added="true" target="_self">MacOS</a>
+<a class="footer-list" href="https://flashstorage.games/?layout=windows" data-click-added="true" target="_self">Windows</a>
+<a class="footer-list" href="https://flashstorage.games/?layout=candy" data-click-added="true" target="_self">Candy</a>
+</div>
+<br class="clear-left" />
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://flashstorage.games/public/js/flash_detect.js"></script>
+<script src="https://flashstorage.games/public/js/jquery.min.js"></script>
+<script src="https://flashstorage.games/public/js/modern/fsg.js?f=1"></script>
+<script src="https://flashstorage.games/public/js/modern/app.js?f=1"></script>
+<script language="javascript">
+	App.testEmulators().init();
+</script>
+<div id="detect__adblock" class="w3-modal fsw-modal">
+<div class="w3-modal-content w3-animate-up">
+<header class="w3-container w3-yellow">
+<h3>AdBlock Detected</h3>
+</header>
+<div class="w3-container w3-red">
+<p>We need some funding to keep the site running so please accept the presence of advertising units on the site by turning off AdBlock.</p>
+</div>
+</div>
+</div>
+<div id="mobile_app" class="fsg_modal fsg_bgr_red" data-first-show="true">
+<div class="fsg_container fsg_drop_shadow" style="min-height:100vh">
+<div class="fsg_panel" style="width:640px">
+<div class="fsg_panel__title fsg_drop_shadow">
+Mobile Apps
+<button class="fsg_close" data-parent-id="mobile_app" data-show-again="false">&#x2715;</button>
+</div>
+<div class="fsg_line">
+<div class="fsg_line__content"></div>
+</div>
+<div class="fsg_panel_content">
+<div class="fsg_card" style="width:calc(50% - 10px)">
+<div class="fsg_card__title">Android</div>
+<img class="fsg_card__img" src="public/icons/4-app/app-logo-4-ggole-play.png" width="100" />
+<ul class="fsg_card__list">
+<li>Extension: .APK</li>
+<li>Size: ~10 Mib</li>
+<li>Version: Alpha</li>
+<li><a class="list_yt_video" href="https://www.youtube.com/watch?v=nlEzxcMs9eQ&t=22s" target="_blank">Youtube Video</a></li>
+<li><a class="list_yt_video" href="https://flashstorage.games/download/app/android" target="_blank">Download APK File</a></li>
+</ul>
+<a href="https://play.google.com/store/apps/details?id=flashga.me.flashstoragegames" class="fsg_button" target="_blank">Google Play</a>
+</div>
+<div class="fsg_card" style="width:calc(50% - 10px);opacity:0.6">
+<div class="fsg_card__title">iOS</div>
+<img class="fsg_card__img" src="public/icons/4-app/icon-for-app-blue.png" width="100" />
+<ul class="fsg_card__list">
+<li>Extension: ...</li>
+<li>Size: ... Mib</li>
+<li>Version: ...</li>
+<li><a class="list_yt_video" href="https://www.youtube.com/watch?v=nlEzxcMs9eQ&t=22s" target="_blank">Youtube Video</a></li>
+<li><a class="list_yt_video" href="#" target="_blank">Download</a></li>
+</ul>
+<a href="#" class="fsg_button__disabled">App Store</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8995e4e29b886028","r":1,"version":"2024.4.1","token":"d9961c923afc4042a74d1f978ef38498"}' crossorigin="anonymous"></script>
+</body>
+</html>
