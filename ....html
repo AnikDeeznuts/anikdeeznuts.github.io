@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html> 
+<body> 
+
+<div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video id="video1" width="420">
+    <source src="https://rr2---sn-h557sn66.googlevideo.com/videoplayback?expire=1719748154&ei=2vGAZsCrHe3-4-EPs7aE2AI&ip=103.126.218.160&id=o-AEmXWTMm95SOCZr7dgr0nPH7Rf46AM_UYaWdPIPMrm6Y&itag=134&aitags=133%2C134%2C135%2C136%2C137%2C160%2C242%2C243%2C244%2C247%2C248%2C278%2C394%2C395%2C396%2C397%2C398%2C399&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&gcr=bd&bui=AbKP-1OMFfAAtRn9VULAj24DtPjAcV99bw-m6es1hlAvOW_19OyQvFGnOqdHr34PG1gf2IyOkAH7yPi7&spc=UWF9f7Kn8nnuVOdJJLztrZAjfHC8WLtZeKRxjHV7evzxH-UtzLoEYmiVtXY_&vprv=1&svpuc=1&mime=video%2Fmp4&ns=2MaZxAnxSg1ZbALdRBvEav0Q&rqh=1&gir=yes&clen=465678&dur=139.320&lmt=1636288236261241&keepalive=yes&c=WEB&sefc=1&txp=5432434&n=jQJ33JI39hnEMg&sparams=expire%2Cei%2Cip%2Cid%2Caitags%2Csource%2Crequiressl%2Cxpc%2Cgcr%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Cns%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRgIhALcmgY5LgZBb6Mcs5-K3Gla_yZfJ53MWJxdxa-B8n_WDAiEAxl9HbYi_3D-HgjgXOqMl5-7XbxY5vbteoy4Vf_rNPe4%3D&redirect_counter=1&cm2rm=sn-n3t8pxfcq-q5js7s&fexp=24350456,24350516,24350517&req_id=fc60c98..." type="video/mp4">
+    <source src="mov_bbb.ogg" type="video/ogg">
+    Your browser does not support HTML video.
+  </video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+</script> 
+
+
+</body> 
+</html>
+
